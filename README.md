@@ -1,8 +1,6 @@
 # paypal-auth-assertion-header
 
-This is a rough demo illustrating how the PayPal-Auth-Assertion header is composed and decomposed.
-
-It follows the implementation docs on https://developer.paypal.com/docs/multiparty/issue-refund/.
+This is a rough demo illustrating how to dynamically reload and unload the PayPal buttons using Svelte.
 
 _Note that you will need to have [Node.js](https://nodejs.org) installed._
 
