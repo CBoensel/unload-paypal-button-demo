@@ -1,4 +1,4 @@
-# paypal-auth-assertion-header
+# unload-paypal-button-demo
 
 This is a rough demo illustrating how to dynamically reload and unload the PayPal buttons using Svelte.
 
