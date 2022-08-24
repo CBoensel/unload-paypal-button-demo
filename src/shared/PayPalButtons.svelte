@@ -6,9 +6,15 @@
   const clientID = "test";
   const containerID = "#paypal-buttons";
   const cartTotal = 0.01;
+  let paypal = null;
+
+  const isPromise = (arg) => typeof arg === 'object' && typeof arg.then === 'function';
 
   $: if (countryCode !== "IR") {
-    initPayPalButtons(clientID, containerID, cartTotal, countryCode);
+    paypal = initPayPalButtons(clientID, containerID, cartTotal, countryCode);
+  } else if (paypal && !isPromise(paypal)) {
+    // optional, but probably cleaner to remove everything
+    paypal.destroyAll();
   }
 </script>
 

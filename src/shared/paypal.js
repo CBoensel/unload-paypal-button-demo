@@ -48,7 +48,11 @@ async function initPayPalButtons(
     } catch (error) {
       console.error('failed to render the PayPal Buttons', error);
     }
+
+    return paypal;
   }
+
+  return null;
 }
 
 export { initPayPalButtons };
